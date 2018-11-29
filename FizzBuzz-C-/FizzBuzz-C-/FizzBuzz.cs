@@ -6,7 +6,13 @@ namespace FizzBuzz_C_
     {
         static void Main(string[] args)
         {
-           
+            for (int i = 0; i < 16; i++)
+            {
+                DivisibleByThree(i);
+                DivisibleByFive(i);
+                DivisibleByFifteen(i);
+            }
+            
         }
 
         public static void DivisibleByThree(int num)
