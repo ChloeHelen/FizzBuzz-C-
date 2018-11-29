@@ -17,5 +17,13 @@ namespace FizzBuzz_C_
             }
          
         }
+
+        public static void DivisibleByFive(int num)
+        {
+            if (num % 5 == 0)
+            {
+                Console.WriteLine("Buzz");
+            }
+        }
     }
 }

@@ -24,5 +24,20 @@ namespace FizzBuzz_C__tests
             }
         }
 
+        [Fact]
+        public void DivisibleByFiveReturnsBuzz()
+        {
+            using (StringWriter sw = new StringWriter())
+            {
+                Console.SetOut(sw);
+
+                FizzBuzz.DivisibleByFive(5);
+
+                string expected = string.Format("Buzz{0}", Environment.NewLine);
+                Assert.Equal(expected, sw.ToString());
+
+            }
+        }
+
     }
 }
