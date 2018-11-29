@@ -39,5 +39,19 @@ namespace FizzBuzz_C__tests
             }
         }
 
+        [Fact]
+        public void DivisibleByFifteenReturnsFizzBuzz()
+        {
+            using (StringWriter sw = new StringWriter())
+            {
+                Console.SetOut(sw);
+
+                FizzBuzz.DivisibleByFifteen(15);
+
+                string expected = string.Format("FizzBuzz{0}", Environment.NewLine);
+                Assert.Equal(expected, sw.ToString());
+            }
+        }
+
     }
 }

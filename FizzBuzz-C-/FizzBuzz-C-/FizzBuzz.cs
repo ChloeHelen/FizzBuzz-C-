@@ -25,5 +25,13 @@ namespace FizzBuzz_C_
                 Console.WriteLine("Buzz");
             }
         }
+
+        public static void DivisibleByFifteen(int num)
+        {
+            if (num % 15 == 0)
+            {
+                Console.WriteLine("FizzBuzz");
+            }
+        }
     }
 }
